@@ -1,11 +1,3 @@
-// revealjs style
-import 'reveal.js/css/reveal.css';
-import 'reveal.js/css/theme/black.css';
-
-// highlight.js style
-import 'highlight.js/styles/zenburn.css'
-
-
 // plugins
 // Note: reveal.js plugins returns always file urls
 import zoomUrl from 'reveal.js/plugin/zoom-js/zoom';
