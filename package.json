@@ -1,12 +1,19 @@
 {
-  "name": "presentation-boilerplate",
-  "version": "1.0.0",
+  "name": "presentation-starter",
+  "version": "0.0.1",
   "description": "",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
     "build": "cross-env NODE_ENV=production npm run webpack -- --config webpack/webpack-config.production.js",
     "webpack": "babel-node ./node_modules/webpack/bin/webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zinserjan/presentation-starter"
+  },
+  "bugs": {
+    "url": "https://github.com/zinserjan/presentation-starter/issues"
   },
   "author": "Jan-André Zinser",
   "license": "MIT",
