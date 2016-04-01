@@ -33,12 +33,3 @@ server.listen(3000, 'localhost', function (err) {
 
   console.log('Listening at http://%s:%d', addr.address, addr.port);
 });
-
-
-process.on('SIGTSTP', function () {
-  // stop server on crtl+z & exit process
-  server.close(function () {
-    console.log('server stopped');
-    process.exit(0);
-  });
-});
