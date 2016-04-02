@@ -1,15 +1,28 @@
-# presentation-boilerplate
+# presentation-starter
 
 Starter for building a [reveal.js] presentation with the help of [webpack] & [react]
 
-## Getting started
+### Getting started
 
 ```bash
-# install all depdencies
+# install all dependencies
 $ npm install
 
-# start presentation
+# start presentation & have fun
 $ npm run start
+```
+
+### Build
+
+```bash
+# build a standalone version of presentation into dist folder
+$ npm run build
+```
+
+### Deploy
+```bash
+# build the standalone version and deploys it to github pages
+$ npm run deploy
 ```
 
 ### License
