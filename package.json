@@ -5,7 +5,9 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "build": "cross-env NODE_ENV=production npm run webpack -- --config webpack/webpack-config.production.js",
+    "clean": "rimraf dist",
+    "build": "npm run clean && npm run build:standalone",
+    "build:standalone": "cross-env NODE_ENV=production npm run webpack -- --config webpack/webpack-config.production.js",
     "webpack": "babel-node ./node_modules/webpack/bin/webpack",
     "deploy": "npm run build && gh-pages -d dist"
   },
@@ -32,6 +34,7 @@
     "babel-register": "^6.7.2",
     "cross-env": "^1.0.7",
     "css-loader": "^0.23.1",
+    "express": "^4.13.4",
     "file-loader": "^0.8.5",
     "gh-pages": "^0.11.0",
     "highlight-loader": "^0.6.1",
@@ -41,6 +44,7 @@
     "markdown-loader": "^0.1.7",
     "node-sass": "^3.4.2",
     "raw-loader": "^0.5.1",
+    "rimraf": "^2.5.2",
     "sass-loader": "^3.2.0",
     "script-loader": "^0.6.1",
     "source-map-support": "^0.4.0",
@@ -51,7 +55,6 @@
     "webpack-hot-middleware": "^2.10.0"
   },
   "dependencies": {
-    "express": "^4.13.4",
     "highlight.js": "^9.2.0",
     "javascript-natural-sort": "^0.7.1",
     "path-sort": "^0.1.0",

@@ -13,8 +13,8 @@ const config = {
   ],
   output: {
     path: pathDist,
-    chunkFilename: '[id].chunk.js',
-    filename: '[name].js',
+    chunkFilename: '[chunkhash].chunk.js',
+    filename: '[name]-[chunkhash].js',
     publicPath: ''
   },
   resolve: {
