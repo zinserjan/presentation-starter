@@ -1,12 +1,9 @@
-## todo Notes with markdown
-
-
-```markdown
-## todo Notes with markdown
+## Notes with markdown
 
 Note:
 - very interesting note...
-
 - another interesting note...
 
-```
+Note:
+- very interesting note 2...
+- another interesting note 2...

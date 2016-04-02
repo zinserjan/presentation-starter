@@ -6,6 +6,7 @@ const pathBase = path.resolve(__dirname, '..');
 const pathSrc = path.join(pathBase, 'src');
 const pathLib = path.join(pathBase, 'lib');
 const pathDist = path.join(pathBase, 'dist');
+const pathLoader = path.join(pathBase, 'webpack', 'loader');
 
 const config = {
   entry: [
@@ -25,6 +26,11 @@ const config = {
     alias: {
       'lib': pathLib,
     }
+  },
+  resolveLoader: {
+    fallback: [
+      pathLoader
+    ],
   },
   module: {
     loaders: [
