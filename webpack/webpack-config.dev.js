@@ -73,7 +73,7 @@ const config = {
     new HtmlWebpackPlugin({
       filename: 'index.html',
       title: '',
-      template: path.join(pathSrc, 'Html.js') // Load a custom template
+      template: path.join(pathLib, 'template', 'Html.js') // Load a custom template
     }),
     new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.HotModuleReplacementPlugin(),
